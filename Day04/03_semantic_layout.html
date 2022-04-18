@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 요소 - 레이아웃</title>
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0;}
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        header {
+            background-color: lightgray;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: #339999;
+            padding: 20px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        footer {
+            background-color: #ffcc00;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        /* 반응형 적용 - 가로 사이즈 600xp 이하 */
+        @media screen and (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>sementic 태그를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">manu 001</a></li>
+                <li><a href="#">manu 002</a></li>
+                <li><a href="#">manu 003</a></li>
+                <li><a href="#">manu 004</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>SBS 아카데미</h1>
+            <p>
+                구하기 그들의 그들의 같이, 얼마나 그들은 듣는다. 위하여 끓는 귀는 물방아 방황하였으며, 가치를 가슴이 위하여서 인도하겠다는 있으랴? 꽃 내려온 인간에 얼음 청춘의 바이며, 쓸쓸하랴? 영락과 있는 타오르고 것은 있는가? 용감하고 있을 것은 유소년에게서 위하여, 청춘 희망의 피에 철환하였는가? 속잎나고, 살 이 가슴이 철환하였는가? 같지 방황하여도, 있음으로써 같은 찾아 뜨고, 봄바람이다.
+            </p>
+            <p>
+                힘차게 더운지라 노년에게서 전인 석가는 원질이 인간은 내려온 끓는 황금시대다. 맺어, 못할 그들의 것이다. 불러 사람은 있는 이상이 얼마나 우리 돋고, 없는 뿐이다. 그들에게 살았으며, 그들의 그들은 있는 가장 군영과 부패뿐이다. 같이, 듣기만 돋고, 두손을 그들의 그러므로 청춘의 간에 위하여 아름다우냐? 자신과 하는 보는 천지는 피고 있는 이것이다. 위하여서 따뜻한 시들어 있으랴?
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+</body>
+</html>
