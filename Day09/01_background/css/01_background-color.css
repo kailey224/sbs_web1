@@ -1,0 +1,51 @@
+
+.container {
+    text-align: center;
+}
+
+.inner {
+    width: 70vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.inner .item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    height: 20vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 
+    [CSS 컬러]
+    CSS 컬러 조합 고르는 사이트 : https://colorhunt.co/
+    CSS 컬러 팔레트 : https://flatuicolors.com/
+    CSS 컬러 픽커 : https://fffuel.co/cccolor/
+    CSS 색상 키워드 : https://developer.mozilla.org/ko/docs/Web/CSS/color_value
+ */
+
+.color1 { background-color: tomato; }
+.color2 { background-color: cornflowerblue; }
+.color3 { background-color: mediumaquamarine; }
+.color4 { background-color: slateblue; }
+
+.color5 { background-color: #F9EBC8; }
+.color6 { background-color: #FEFBE7; }
+.color7 { background-color: #DAE5D0; }
+.color8 { background-color: #A0BCC2; }
+
+.color9 { background-color: #E9D5DA; }
+.color10 { background-color: #FBD6D2; }
+.color11 { background-color: #FD5D5D; }
+.color12 { background-color: #F190B7; }
+
+.color13 { background-color: hsla(93, 100%, 77%, 1); }
+.color14 { background-color: hsl(59, 100%, 67%); }
+.color15 { background-color: rgba(255, 149, 120, 1); }
+.color16 { background-color: rgb(130, 145, 255); }
+
