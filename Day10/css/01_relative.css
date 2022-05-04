@@ -21,10 +21,11 @@ h1 { text-align: center; }
 }
 
 /* position: relative; */
-.containter .relative {
+.container .relative {
     position: relative;     /* 초기 위치를 기준으로 위치 설정 */
     border: 3px solid black;
 }
+
 
 /* 박스 기본위치 */
 .container .absolute {
@@ -36,11 +37,10 @@ h1 { text-align: center; }
 
 .first {left: 100px;}
 .second { right: 100px;}
-.third { top: 100; left: 100px;}
+.third { top: 100; left: 200px;}
 .fourth { bottom: 100px; right: 200px;}
 
 .fifth { top: 0; left: 500px;}
 .sixth { top: 200px; left: 500px;}
 .seventh { top: 400px; left: 500px;}
 .eighth { top: 600px; left: 500px;}
-
