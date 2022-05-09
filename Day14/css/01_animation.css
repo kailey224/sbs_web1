@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0;}
+
+/* 그라데이션 만드는 사이트 : https://cssgradient.io/ */
+#wrap {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(69,64,152,1) 0%, rgba(121,74,9,1) 35%, rgba(0,212,255,1) 100%);
+
+    /* 애니메이션 */
+    animation-name: ball;                   /* 애니메이션 이름 */
+    animation-duration: 3s;                 /* 재생시간 */
+    animation-timing-function: linear;      /* 타이밍 함수 */
+    animation-iteration-count: infinite;    /* 반복 횟수 */
+}
+
+
+#wrap h1 { line-height: 200; color: white; text-align: center;}
+
+/* 애니메이션의 변경지점을 지정하는 속성 */
+@keyframes ball {
+    /* 시작위치 from or 0% */
+    from {
+        left: 0;
+    }
+
+    50% {
+        left: 500px;
+        transform: rotate(360deg);
+    }
+
+    /* 종료위치 to or 100% */
+    100% {
+        left: 0px;
+       
+    }
+}
